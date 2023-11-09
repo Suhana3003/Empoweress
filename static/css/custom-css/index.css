@@ -30,7 +30,7 @@ body {
 }
 
 .overlay {
-  background: #78488e;
+  background: rgb(199, 11, 77);
   content: '';
   top: 0;
   left: 0;
@@ -64,12 +64,11 @@ body {
 }
 
 .text__color {
-  color: #78488e;
+  color: rgb(199, 11, 77);
 }
 
 .btn {
-  background-color: #78488e;
-  border: #FFFFFF;
+  background-color: rgb(199, 11, 77);
   color: #FFFFFF;
   height: 34.86px;
   font-style: normal;
@@ -81,15 +80,9 @@ body {
   padding-top: 9.96px;
   padding-bottom: 9.96px;
 }
-.btn-register .btn-register:hover{
-  background-color: #330548;
-  border: #FFFFFF;
-  color: #FFFFFF;
-
-}
 
 .section-intro {
-  background-color: #78488e;
+  background-color: rgb(199, 11, 77);
 }
 
 .intro-reasons {
@@ -107,7 +100,7 @@ body {
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  color: #330548;
+  color: rgb(199, 11, 77);
 }
 
 .intro-reasons__sub-margin {
@@ -125,7 +118,7 @@ body {
 .icon-box {
   width: 50px;
   height: 50px;
-  background-color: #78488e;
+  background-color: #5c5b5b;
   border-radius: 50%;
   margin-bottom: 4px;
 }
@@ -154,7 +147,7 @@ body {
 }
 
 .section-services {
-  background-color: #78488e(13, 13, 13, 0.96);
+  background-color: #707070;
 }
 
 .services {
@@ -167,7 +160,7 @@ body {
 }
 
 .service {
-  background-color: #78488e;
+  background-color: #707070;
 
 }
 
@@ -229,7 +222,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #330548;
+  color: rgb(199, 11, 77);
 }
 
 .service-title__heading-1 {
@@ -241,7 +234,7 @@ body {
 }
 
 .arrow-box {
-  background-color: #330548;
+  background-color: #707070;
 }
 
 .register {
@@ -253,7 +246,7 @@ body {
 }
 
 .register-overlay {
-  background: rgba(0, 0, 0, 0.65);
+  background: #707070(0, 0, 0, 0.65);
   content: '';
   top: 0;
   left: 0;
@@ -285,7 +278,7 @@ body {
 }
 
 .section-payment {
-  background-color: #0A0A0A;
+  background-color: #707070;
 }
 
 .payment-plan {
@@ -299,7 +292,7 @@ body {
 
 .plan {
   border: 1px solid white;
-  background-color: #0A0A0A;
+  background-color: #707070;
   border-radius: 16px;
 }
 
@@ -319,7 +312,7 @@ body {
   font-weight: 800;
   font-size: 30px;
   line-height: 37px;
-  color: #FF4301;
+  color: rgb(199, 11, 77);
 }
 
 .plan__menu ul {
@@ -328,7 +321,7 @@ body {
 
 .plan__menu ul li::before {
   content: "\2022";
-  color: #FF4301;
+  color: rgb(199, 11, 77);
   font-weight: bold;
   display: inline-block; 
   width: 1em;
@@ -349,7 +342,7 @@ body {
 }
 
 .section-gallery {
-  background-color: #0A0A0A;
+  background-color: #707070;
 }
 
 .gallery {
@@ -370,7 +363,7 @@ body {
 }
 
 .section-experts {
-  background-color: rgba(13, 13, 13, 0.96) ;
+  background-color: #707070(13, 13, 13, 0.96) ;
   
 }
 
@@ -385,7 +378,7 @@ body {
 }
 
 figure{
-  background-color: #0A0A0A;
+  background-color: #707070;
   width: 343px !important;
 }
 
@@ -442,7 +435,7 @@ figure{
 }
 
 .carousel-indicators .active {
-  background-color: #330548;
+  background-color: rgb(199, 11, 77);
 }
 
 .carousel-inner {
@@ -450,7 +443,7 @@ figure{
 }
 
 .section-contact {
-  background-color: #0A0A0A;
+  background-color: #707070;
 }
 
 .contacts-info {
@@ -464,7 +457,7 @@ figure{
 .address-icon-box {
   width: 40px;
   height: 40px;
-  background-color: #330548;
+  background-color: rgb(199, 11, 77);
   border-radius: 50%;
 }
 
@@ -491,7 +484,7 @@ figure{
 }
 
 .section-info {
-  background-color: #0A0A0A;
+  background-color: #707070;
 }
 
 .info {
@@ -561,7 +554,7 @@ figure{
 
 #info-links:hover,
 #info-links:active {
-  color: #330548;
+  color: rgb(199, 11, 77);
   text-decoration: none;
 }
 
@@ -622,7 +615,6 @@ hr {
     padding-right: 28px;
     padding-top: 18px;
     padding-bottom: 16px;
-
   }
 
   .intro-reasons {
@@ -715,7 +707,8 @@ hr {
   }
 
   .register {
-    background-image: url(../../img/roller.jpg);
+    background-image: url(../../img/background.jpeg);
+    opacity: 0.75;
     height: 680px;
   }
 
@@ -767,7 +760,7 @@ hr {
     font-weight: 800;
     font-size: 40px;
     line-height: 49px;
-    color: #330548;
+    color: #rgb(199, 11, 77);
   }
 
   #plans {

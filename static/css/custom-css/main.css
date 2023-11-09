@@ -5,7 +5,7 @@
         
         body {
             /* background: #0D0D0D; */
-            color: #330548;
+            color: #fff;
         }
         
         @media screen and ( max-width: 1245px) {
@@ -28,7 +28,7 @@
         }
         
         .hero .overlay {
-            background: rgba(69, 9, 69, 0.7);
+            background: rgba(0, 0, 0, 0.7);
             padding: 38vh 0;
         }
         
@@ -42,7 +42,7 @@
         }
         
         .hero h1 span {
-            color: #330548;
+            color: rgb(199, 11, 77);
         }
         
         .card-content {
@@ -53,7 +53,7 @@
             position: absolute;
             bottom: 0px;
             right: 0px;
-            background: #330548;
+            background: rgb(199, 11, 77);
             padding: 16px;
         }
         
@@ -75,7 +75,7 @@
             font-weight: bold;
             font-size: 25px;
             line-height: 30px;
-            color: #330548;
+            color: rgb(199, 11, 77);
         }
         
         .team-content .card-body h2 {
@@ -113,19 +113,19 @@
             -moz-border-radius: 50px 0 0 50px;
             -webkit-border-radius: 50px;
             border-radius: 50px 50px 50px 50px;
-            background: #330548;
+            background: rgb(199, 11, 77);
         }
         
         .modal-4 a.next {
             -moz-border-radius: 0 50px 50px 0;
             -webkit-border-radius: 0;
             border-radius: 50px 50px 50px 50px;
-            background: #330548;
+            background: rgb(199, 11, 77);
         }
         
         .modal-4 a.active,
         .modal-4 a:active {
-            border: 1px solid #330548;
+            border: 1px solid rgb(199, 11, 77);
             border-radius: 5.7px;
         }
         

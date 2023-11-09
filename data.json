@@ -1,129 +1,231 @@
 {
     "intents": [
-    {
-    "tag": "greeting",
-    "patterns": [
-    "Hi there",
-    "How are you",
-    "Is anyone there?",
-    "Hey",
-    "Hola",
-    "Hello",
-    "Good day"
-    ],
-    "responses": [
-    "Hello, thanks for asking",
-    "Good to see you again",
-    "Hi there, how can I help?"
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "goodbye",
-    "patterns": [
-    "Bye",
-    "See you later",
-    "Goodbye",
-    "Nice chatting to you, bye",
-    "Till next time"
-    ],
-    "responses": [
-    "See you!",
-    "Have a nice day",
-    "Bye! Come back again soon."
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "thanks",
-    "patterns": [
-    "Thanks",
-    "Thank you",
-    "That's helpful",
-    "Awesome, thanks",
-    "Thanks for helping me"
-    ],
-    "responses": ["Happy to help!", "Any time!", "My pleasure"],
-    "context": [""]
-    },
-    {
-    "tag": "noanswer",
-    "patterns": [],
-    "responses": [
-    "Sorry, can't understand you",
-    "Please give me more info",
-    "Not sure I understand"
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "options",
-    "patterns": [
-    "How can you help me?",
-    "What can you do?",
-    "What services do you provide?",
-    "How can you assist me?",
-    "What support is offered?"
-    ],
-    "responses": [
-    "I can provide guidance on fitness programs, track your workouts, offer nutrition advice, and help you set and achieve fitness goals.",
-    "I can assist with fitness program recommendations, workout tracking, nutrition guidance, and goal setting.",
-    "I offer support for fitness programs, workout tracking, nutrition tips, and goal management."
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "fitness_programs",
-    "patterns": [
-    "What fitness programs do you have?",
-    "Tell me about the available fitness programs",
-    "What types of workouts do you offer?",
-    "Can you recommend a fitness program?"
-    ],
-    "responses": [
-    "We have a variety of fitness programs tailored to different goals and fitness levels. Whether you're interested in weight loss, muscle building, or overall fitness, we have something for you. Let me know your preferences, and I'll recommend a suitable program.",
-    "Our fitness programs include cardio, strength training, HIIT, yoga, and more. Each program is designed to target specific fitness goals. If you let me know your preferences, I can recommend a program that suits you best."
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "workout_tracking",
-    "patterns": [
-    "How can I track my workouts?",
-    "Is there a way to monitor my exercise progress?",
-    "What tools do you provide for workout tracking?"
-    ],
-    "responses": [
-    "We offer a workout tracking feature that allows you to log and monitor your exercises. You can record details such as duration, intensity, and specific exercises performed. It's a great way to keep track of your progress and stay motivated.",
-    "With our workout tracking feature, you can easily log your workouts and keep a record of your exercise history. It's a helpful tool to monitor your progress and make adjustments to your fitness routine."
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "nutrition_guidance",
-    "patterns": [
-    "Can you provide nutrition advice?",
-    "What kind of diet should I follow?",
-    "How can I improve my eating habits?"
-    ],
-    "responses": [
-    "Proper nutrition is essential for achieving your fitness goals. I can provide personalized nutrition advice based on your needs and preferences. Let me know if you have any specific dietary requirements or if you'd like general guidance.",
-    "Nutrition plays a vital role in fitness. I can offer guidance on healthy eating habits, meal planning, and dietary adjustments to support your fitness journey. If you have any dietary restrictions or preferences, feel free to let me know."
-    ],
-    "context": [""]
-    },
-    {
-    "tag": "goal_setting",
-    "patterns": [
-    "How can I set fitness goals?",
-    "What are some examples of fitness goals?",
-    "Can you help me establish workout targets?"
-    ],
-    "responses": [
-    "Setting fitness goals is important for staying motivated and tracking progress. I can help you define realistic and achievable goals based on your current fitness level and aspirations. Let's discuss your objectives, and together we'll create a plan to reach them.",
-    "Fitness goals can vary from weight loss and muscle gain to improving endurance or flexibility. It's essential to set goals that are specific, measurable, attainable, relevant, and time-bound (SMART goals). Let me know your objectives, and I'll assist you in establishing suitable targets."
-    ],
-    "context": [""]
-    }
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How can you help me?",
+                "What can you do?",
+                "What services do you provide?",
+                "How can you assist me?",
+                "What support is offered?"
+            ],
+            "responses": [
+                "I can provide guidance on fitness programs, track your workouts, offer nutrition advice, and help you set and achieve fitness goals.",
+                "I can assist with fitness program recommendations, workout tracking, nutrition guidance, and goal setting.",
+                "I offer support for fitness programs, workout tracking, nutrition tips, and goal management."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "women_empowerment",
+            "patterns": [
+                "How can I empower myself?",
+                "What can I do to support women empowerment?",
+                "Tell me about women's rights",
+                "How can I make a difference for women?",
+                "Empowerment tips for women",
+                "What organizations support women's rights?"
+            ],
+            "responses": [
+                "Empowering yourself starts with self-belief and confidence. You can also support women empowerment by advocating for equal rights, education, and opportunities. Joining organizations that work towards women's rights can make a difference.",
+                "Women's rights include the right to education, work, and participate in social, economic, and political life. Supporting women's rights means advocating for equality and dismantling barriers that hinder progress.",
+                "You can make a difference for women by being a voice for change, supporting initiatives that promote equality, and empowering other women around you. Small actions can lead to significant impact.",
+                "Empowerment tips for women include setting goals, building a strong support network, and being assertive. Additionally, continuous learning and self-care are crucial for personal growth and empowerment.",
+                "There are many organizations dedicated to supporting women's rights, such as UN Women, Planned Parenthood, and Women's Global Empowerment Fund. You can get involved by volunteering or donating to these organizations."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "women_entrepreneurship",
+            "patterns": [
+                "How can I start my own business?",
+                "Tell me about women entrepreneurs",
+                "Empowerment through entrepreneurship",
+                "Women in business",
+                "Tips for female entrepreneurs"
+            ],
+            "responses": [
+                "Starting your own business involves identifying a passion or skill, conducting market research, creating a business plan, and taking action. It's a powerful way to empower yourself and contribute to the economy.",
+                "Women entrepreneurs play a crucial role in driving innovation and economic growth. They often face unique challenges and deserve support and recognition for their contributions.",
+                "Empowerment through entrepreneurship allows women to take control of their financial independence and create opportunities for others. It also challenges traditional gender roles and stereotypes.",
+                "Women in business have made significant strides in various industries. They demonstrate resilience, leadership, and innovation. It's important to celebrate and support their achievements.",
+                "Tips for female entrepreneurs include networking, seeking mentorship, continuous learning, and staying true to your vision. It's also important to persevere through challenges and believe in your capabilities."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "body_positivity",
+            "patterns": [
+                "How can I promote body positivity?",
+                "Tell me about body positivity movement",
+                "Body image and self-esteem",
+                "Confidence tips for women",
+                "Embracing your body"
+            ],
+            "responses": [
+                "Promoting body positivity involves embracing diverse body types, challenging beauty standards, and celebrating the uniqueness of every individual. It's about fostering self-love and acceptance.",
+                "The body positivity movement advocates for the acceptance of all bodies, regardless of size, shape, or appearance. It aims to combat body shaming and promote self-confidence and self-worth.",
+                "Body image and self-esteem are closely linked. Building confidence involves focusing on your strengths, practicing self-care, and surrounding yourself with positive influences.",
+                "Confidence tips for women include positive self-talk, setting and achieving goals, and celebrating personal achievements. It's important to acknowledge your worth and capabilities.",
+                "Embracing your body means appreciating it for what it is and all that it allows you to do. Treat your body with kindness, nourish it, and engage in activities that make you feel good."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "career_advancement",
+            "patterns": [
+                "How can I advance in my career?",
+                "Career development for women",
+                "Negotiating salary for women",
+                "Professional growth tips",
+                "Breaking the glass ceiling"
+            ],
+            "responses": [
+                "Advancing in your career involves setting clear goals, seeking mentorship, and continuously building your skills and knowledge. Don't be afraid to advocate for yourself and take on new challenges.",
+                "Career development for women includes seeking out leadership opportunities, networking, and pursuing additional education or certifications. It's important to believe in your capabilities and value.",
+                "Negotiating salary for women is an essential skill. Research market rates, practice your pitch, and confidently communicate your value to employers. Remember, you deserve fair compensation.",
+                "Professional growth tips for women include seeking feedback, taking on stretch assignments, and building a strong professional network. Don't hesitate to express your career aspirations and seek opportunities for growth.",
+                "Breaking the glass ceiling means overcoming barriers and stereotypes that limit women's advancement in the workplace. It requires persistence, mentorship, and advocating for equal opportunities."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "mental_health",
+            "patterns": [
+                "How can I prioritize my mental health?",
+                "Self-care for women",
+                "Coping with stress and anxiety",
+                "Building resilience",
+                "Support for mental well-being"
+            ],
+            "responses": [
+                "Prioritizing your mental health involves practicing self-care, setting boundaries, and seeking support when needed. Remember, taking care of your mental well-being is a sign of strength.",
+                "Self-care for women includes activities like exercise, mindfulness, journaling, and spending time with loved ones. It's important to engage in practices that nurture your emotional and mental well-being.",
+                "Coping with stress and anxiety can be achieved through techniques like deep breathing, meditation, and seeking professional help if needed. Remember to practice self-compassion during challenging times.",
+                "Building resilience involves developing healthy coping mechanisms, seeking social support, and maintaining a positive outlook. Resilience helps you navigate through adversity and come out stronger.",
+                "Support for mental well-being is crucial. Reach out to friends, family, or professionals if you're struggling. Remember, seeking help is a sign of strength and shows that you value your mental health."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "leadership",
+            "patterns": [
+                "How can women excel in leadership roles?",
+                "Leadership skills for women",
+                "Empowering teams",
+                "Overcoming imposter syndrome",
+                "Being a role model"
+            ],
+            "responses": [
+                "Excelling in leadership roles involves honing skills like communication, decision-making, and empathy. Additionally, it's important to lead by example and inspire your team.",
+                "Leadership skills for women include effective communication, conflict resolution, and strategic thinking. It's important to be authentic, confident, and value diverse perspectives.",
+                "Empowering teams means creating an inclusive and supportive work environment. Encourage open communication, provide opportunities for growth, and recognize and celebrate achievements.",
+                "Overcoming imposter syndrome is a common challenge. Recognize your accomplishments, seek out mentorship, and remind yourself that you deserve to be where you are.",
+                "Being a role model involves leading with integrity, demonstrating empathy, and supporting the growth and development of others. Your actions can inspire and motivate those around you."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "education",
+            "patterns": [
+                "How can I support girls' education?",
+                "Empowering girls through education",
+                "Promoting STEM for girls",
+                "Scholarship opportunities for women",
+                "Advocating for equal education"
+            ],
+            "responses": [
+                "Supporting girls' education involves advocating for equal access, providing mentorship, and creating opportunities for skill-building and learning.",
+                "Empowering girls through education opens doors to opportunities and helps break the cycle of inequality. Encourage curiosity, critical thinking, and exploration of various fields.",
+                "Promoting STEM (Science, Technology, Engineering, and Mathematics) for girls is crucial for bridging the gender gap in these fields. Encourage curiosity and provide access to STEM resources and education.",
+                "Scholarship opportunities for women are available in various fields. Research and apply for scholarships that align with your interests and career goals. Education should be accessible to all.",
+                "Advocating for equal education means working towards eliminating barriers that prevent girls and women from accessing quality education. Support initiatives and policies that promote inclusivity in education."
+            ],
+            "context": [
+                ""
+            ]
+        }
     ]
-    }
+}

@@ -62,19 +62,19 @@ body.light.blog .page-link:hover{
 }
 
 .red {
-    --skin-color: #f72b1c;
+    --skin-color:rgb(199, 11, 77);
 }
 
 .purple {
     --skin-color: #6957af;
 }
 
-.orange {
-    --skin-color: #fa5b0f;
+.magenta {
+    --skin-color: rgb(199, 11, 77) ;
 }
 
-.magenta {
-    --skin-color: #ee6192;
+.orange {
+    --skin-color:#fa5b0f ;
 }
 
 .green {

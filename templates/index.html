@@ -1,307 +1,342 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FitBeat</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/style_f.css" />
-    <link
-    rel="Tab icon"
-    href="/static/img/favicon.png"
-    type="image/png"
-  />
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    rel="stylesheet"
-  />
+  <!DOCTYPE html>
+  <html lang="en">
   
-  <script src="/static/js/main.js"></script>
-  <script src="/static/js/chat.js"></script>
-  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/static/css/circle.css" rel="stylesheet">
-  <link href="/static/css/fm.revealator.jquery.min.css" rel="stylesheet">
-  <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/static/css/preloader.min.css" rel="stylesheet">
-  <!-- <link href="/static/css/style.css" rel="stylesheet"> -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empoweress</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="/static/css/style_f.css" />
+      <link
+      rel="Tab icon"
+      href="/static/img/logo.png"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/circle.css" rel="stylesheet">
+    <link href="/static/css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/preloader.min.css" rel="stylesheet">
+    <!-- <link href="/static/css/style.css" rel="stylesheet"> -->
+  
+    <!-- CSS Skin File -->
+    <link href="/static/css/skin.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/animate-css/animate.css">
+    <link rel="stylesheet" href="/static/css/custom-css/footer.css">
+    <link rel="stylesheet" href="/static/css/custom-css/main.css">
+    <link rel="stylesheet" href="/static/css/custom-css/header.css">
+    <link rel="stylesheet" href="/static/css/custom-css/index.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/styleswitcher.css" />
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
 
-  <!-- CSS Skin File -->
-  <link href="/static/css/skin.css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/animate-css/animate.css">
-  <link rel="stylesheet" href="/static/css/custom-css/footer.css">
-  <link rel="stylesheet" href="/static/css/custom-css/main.css">
-  <link rel="stylesheet" href="/static/css/custom-css/header.css">
-  <link rel="stylesheet" href="/static/css/custom-css/index.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/styleswitcher.css" />
-  <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      size: 40px;
+      font-family: Arial, sans-serif;
+    }
 
+    .navbar {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      height: 80px;
+      background-color: #707070;
+      color: white;
+      text-align: center;
+    }
+
+    .content {
+      margin-top: 80px;
+      /* padding: 20px; */
+    }
+  .navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  /* text-decoration: none; */
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 5px;
+  background-color: pink;
+  text-decoration-line: none;
+}
+.logo {
+  height: 60px; /* Set the height of the logo as needed */
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  /* opacity: 50%; */
+  color: rgb(199, 11, 77);
+  display: flex;
+  justify-content: space-between; /* Adjusted to separate logo and menu */
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 5px;
+  background-color: pink;
+  text-decoration-line: none;
+}
+
+.navbar {
+      /* Existing styles... */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 60px;
+      margin-left: 10px;
+    }
+
+    .nav-item {
+      padding: 10px 20px;
+      position: relative;
+      color: white;
+      text-decoration-line: none;
+    }
+
+    .nav-item:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      /* color: white; */
+      border: 20px solid rgb(199, 11, 77); /* Add a border instead of a background color */
+      pointer-events: none; /* Allows clicks to pass through the box */
+      border-radius: 5px; /* Optional: Add rounded corners */
+      text-decoration-line: none;
+    }
+
+    /* Existing styles... */
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s; /* Added transition for smoother color change */
+}
+
+.nav-item:hover {
+  color: white; /* Change text color on hover */
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 20px solid rgb(199, 11, 77);
+  pointer-events: none;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
+/* Existing styles... */
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s; /* Added transition for smoother color change */
+}
+
+.nav-item:hover {
+  color: white; /* Change text color on hover */
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px; /* Adjusted to create a 20px height box */
+  height: 20px; /* Set the height of the box */
+  background-color: rgb(199, 11, 77);
+  pointer-events: none;
+  border-radius: 5px; /* Optional: Add rounded corners */
+  z-index: -1;
+  text-decoration-line: none;
+}
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Add space between logo and menu */
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px 15px; /* Adjusted padding for the navbar items */
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: white;
+  text-decoration-line: none;
+
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 20px solid rgb(199, 11, 77);
+  pointer-events: none;
+  border-radius: 5px;
+  text-decoration-line: none;
+
+}
+
+.logo {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  margin-right: 40px; /* Add margin to create some space on the right side */
+}
+.nav-item.active {
+  /* Add your hover properties for the active link here */
+  background-color: rgb(199, 11, 77); /* Example: Change background color on hover */
+  border-radius: 5px;
+  color: white; /* Example: Change text color on hover */
+  /* Add any other properties you want */
+}
+
+
+  </style>
 </head>
 
-
 <body>
-  
-  <header class="header">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <!-- <img src="/static/img/favicon.png" alt="Fitfam gym logo"> -->
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto font-weight-bold">
-            <!-- <li class="nav-item px-3 active"> -->
-              <!-- <a class="nav-link active" href="index.html">home <span class="sr-only">(current)</span></a> -->
-            <!-- </li> -->
-            <!-- <li class="nav-item px-3"> -->
-                <!-- <a class="nav-link" href="about.html">About</a> -->
-              <!-- </li> -->
-            <!-- <li class="nav-item px-3"> -->
-              <!-- <a class="nav-link" href="Calorie-Counter.html">Calorie Counter</a> -->
-            <!-- </li> -->
-            <!-- <li class="nav-item px-3"> -->
-              <!-- <a class="nav-link" href="bmi_final.html">BMI Calculator</a> -->
-            <!-- </li> -->
-            <!-- <li class="nav-item px-3"> -->
-                <!-- <a class="nav-link" href="games.html">Games</a> -->
-              <!-- </li> -->
-
-            <!-- <li class="nav-item px-3 dropdown"> -->
-                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" -->
-                  <!-- aria-haspopup="true" aria-expanded="false"> -->
-                  <!-- Fitness & U -->
-                <!-- </a> -->
-                <!-- <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdown"> -->
-                  <!-- <a class="dropdown-item" href="games.html">Games</a> -->
-                  <!-- <a class="dropdown-item" href="blog.html">Blogs</a> -->
-                  <!-- <a class="dropdown-item" href="video.html">Health Videos</a> -->
-  
-                  <!-- <a class="dropdown-item" href="404-error.html">404 error</a> -->
-                <!-- </div> -->
-              <!-- </li> -->
-
-            <!-- <li class="nav-item px-3"> -->
-              <!-- <a class="nav-link" href="meet_the_team.html">Team</a> -->
-            <!-- </li> -->
-          </ul>
-        </div>
-      </nav>
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="/static/img/logo_rbg.png" alt="Logo" class="logo">
     </div>
-  </header>
-  <div id="switcher" class="">
-    <div class="content-switcher">
-        <h4>STYLE SWITCHER</h4>
-        <ul>
-            <li>
-                <a href="#" onclick="changeskin('purple');" title="purple" class="color"><img
-                        src="/static/img/styleswitcher/purple.png" alt="purple" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('red');" title="red" class="color"><img
-                        src="/static/img/styleswitcher/red.png" alt="red" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('blueviolet');" title="blueviolet" class="color"><img
-                        src="/static/img/styleswitcher/blueviolet.png" alt="blueviolet" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('blue');" title="blue" class="color"><img
-                        src="/static/img/styleswitcher/blue.png" alt="blue" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('goldenrod');" title="goldenrod" class="color"><img
-                        src="/static/img/styleswitcher/goldenrod.png" alt="goldenrod" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('magenta');" title="magenta" class="color"><img
-                        src="/static/img/styleswitcher/magenta.png" alt="magenta" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('yellowgreen');" title="yellowgreen" class="color"><img
-                        src="/static/img/styleswitcher/yellowgreen.png" alt="yellowgreen" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('orange');" title="orange" class="color"><img
-                        src="/static/img/styleswitcher/orange.png" alt="orange" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('green');" title="green" class="color"><img
-                        src="/static/img/styleswitcher/green.png" alt="green" /></a>
-            </li>
-            <li>
-                <a href="#" onclick="changeskin('yellow');" title="yellow" class="color"><img
-                        src="/static/img/styleswitcher/yellow.png" alt="yellow" /></a>
-            </li>
-        </ul>
-
-        <div id="hideSwitcher">&times;</div>
+    <div class="navbar-right">
+      <a href="index.html" class="nav-item active">HOME</a>
+      
+      <!-- <a href="#about" class="nav-item">About Us</a> -->
+      <a href="game.html" class="nav-item">RED: THE GAME</a>
+      <a href="mood_tracker.html" class="nav-item">MOOD TRACKER</a>
+      <a href="cycle_tracker.html" class="nav-item">PERIOD CYCLE TRACKER</a>
+      <a href="contact_doctor.html" class="nav-item">CONTACT THE DOCTOR</a>
+      <a href="blogs.html" class="nav-item">BLOGS</a>
     </div>
-</div>
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-  <section class="register d-flex align-items-center position-relative">
-    <div class="register-overlay position-absolute"></div>
-    <div class="container-fluid ">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center wow fadeIn">
-            <h1 class="text-uppercase register__heading--1 mb-3">HealthScape</h2>
-              <class="text-uppercase register__heading--2 mb-3"><h1 class="text-uppercase landing-page__heading--1">game <span class="text__color">on</span><br>
-                health <span class="text__color">strong</span><br>
-                <!-- <button type="submit" class="btn btn-contact">Calculate Calories Lost</button> -->
-              <a href="#" class="btn btn-register text-center text-uppercase wow bounce">Register</a>
-              <a href="#" class="btn btn-register text-center text-uppercase wow bounce">Sign in</a>
+  </div>  
+  
+  
+  <div class="content">
+    <!-- Your content goes here -->
+    <section class="register d-flex align-items-center position-relative">
+      <div class="register-overlay position-absolute"></div>
+      <div class="container-fluid ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center wow fadeIn">
+              <h1 class="text-uppercase register__heading--1 mb-3">Empoweress</h1>
+              <h1 class="text-uppercase landing-page__heading--1"> She <span class="text__color">thrives</span><br>
+                we <span class="text__color">support</span></h1>
+              <a href="about.html" class="btn btn-register text-center text-uppercase  wow bounce">Sign in / Register</a>
+              <!-- <a href="about.html" class="btn btn-register text-center text-uppercase  wow bounce">Register</a> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- <button type="submit" class="btn btn-contact">Calculate Calories Lost</button> -->
-<!-- 
-  <footer class="footer">
-
-    <div class="container-fluid custom-wrapper"> 
-      <div class="row mt-5 mx-1 justify-content-between">
-        <div class="col-md-4 col-lg-1 pl-md-0 pr-sm-0">
-          <div class="pt-0 mb-4 d-none d-md-block">
-            <h4 class="pt-1 pb-1 mb-0 d-none d-md-block"><b><p></b></h4><h3> </h3></p>
-          </div>
-          <div class="py-3 d-block d-sm-block d-md-none text-center"> -->
-            <!-- <img src="/static/img/l" alt="Fitfam logo icon"> -->
-          <!-- </div>
-          <p class="py-2 d-none d-md-block footer-p font-weight-bold">
-            Join our immersive world of <br>
-            gamified fitness, where you can <br>level up your health while having fun.
-          </p>
-        </div>
-        <div class="col-12 text-center text-lg-left col-md-2 col-lg-2 pt-3 py-md-0 my-border d-md-none d-lg-block">
-          <h5 class="pt-3 pb-1 mb-0 d-none d-md-block">Explore</h5>
-          <ul class="pl-0 py-3">
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="index.html">Home</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="about.html">About</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="games.html">Games</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="Calorie-Counter.html">Calorie Counter</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="blog.html">Health Blogs</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="video.html">Health Videos</a></li>
-            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="meet_the_team.html">The team</a></li>
-
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="index.html">Home</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="about.html">About</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="games.html">Games</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="Calorie-Counter.html">Calorie Counter</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="blog.html">Health Blogs</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="video.html">Health Videos</a></li>
-            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="meet_the_team.html">The team</a></li>
-          </ul>
-        </div>
-  
-
-          <span class="float-md-left mt-3 mt-xl-5 text-center">&copy; 2020 FitFam Gym. All rights
-            reserved</span>
-        </div>
-      </div>
-    </div>
-    </div> -->
-  <!-- </footer>  -->
-
+    </section>
+  </div>
 
   <script src="/static/js/jquery.js"></script>
   <script src="/static/js/bootstrap.min.js"></script>
   <script src="/static/js/popper.min.js"></script>
-  <script src="/static/js/popper.js"></script>
-  <script src="/static/js/styleswitcher.js"></script>
-
   <script src="/static/js/wow.min.js"></script>
 
   <script>
     new WOW().init();
   </script>
-<!-- Popup chat window -->
-
-    <!-- chat open -->
-    <div class="chat-bar-open" id="chat-open">
-      <button
-        id="chat-open-button"
-        type="button"
-        class="collapsible close"
-        onclick="chatOpen()"
-      >
-        <img src="/static/img/favicon.png" alt="FitBeat" />
-      </button>
-    </div>
-
-    <!-- chat close -->
-    <div class="chat-bar-close" id="chat-close">
-      <button
-        id="chat-close-button"
-        type="button"
-        class="collapsible close"
-        onclick="chatClose()"
-      >
-        <i class="material-icons-outlined"> close </i>
-      </button>
-    </div>
-
-    <!-- chat-window 1 -->
-    <div class="chat-window" id="chat-window1">
-      <div class="hi-there">
-        <p class="p1">Hi There!</p>
-        <br />
-        <p class="p2">Hello Ask Us Anythig, Share Your<br />Feedback.</p>
-      </div>
-      <div class="start-conversation">
-        <h1>Start a Conversation</h1>
-        <p>The FitBeat team typically replies in few minutes.</p>
-        <button
-          class="new-conversation"
-          type="button"
-          onclick="openConversation()"
-        >
-          <span>New Conversation</span
-          ><i class="material-icons-outlined"> send </i>
-        </button>
-      </div>
-    </div>
-
-    <!-- chat chat-window 2 -->
-    <div class="chat-window2" id="chat-window2">
-      <div class="message-box" id="messageBox">
-        <div class="hi-there">
-          <p class="p1">Hi There!</p>
-          
-          <p class="p2">The team typically replies in few minutes.</p>
-        </div>
-      </div>
-      <div class="input-box">
-        <div class="surveysparrow">
-          <img src="" />
-          <p></p>
-        </div>
-        <div class="write-reply">
-          <input
-            class="inputText"
-            type="text"
-            id="textInput"
-            placeholder="Write a reply..."
-          />
-        </div>
-        <div class="send-button">
-          <button
-            type="submit"
-            class="send-message"
-            id="send"
-            onclick="userResponse()"
-          >
-            <i class="material-icons-outlined"> send </i>
-          </button>
-        </div>
-      </div>
-    </div>
 
 </body>
 

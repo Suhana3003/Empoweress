@@ -30,7 +30,18 @@ def index():
 @app.route('/index.html')
 def index_return():
     return render_template('index.html')
+
+@app.route('/games.html')
+def Game_test():
+    return render_template('ovaquest.html')
+
+from game import CycleQuest
+@app.route('/ovaquest', methods=['GET'])
+def run_game():
+    return CycleQuest().run_game()
+
 # Fitness CHatbot
+
 
 import nltk
 nltk.download('popular')

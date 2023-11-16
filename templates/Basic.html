@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Basic</title>
+         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+         <link rel="stylesheet" href="/static/css/"> 
+     </head>
+     <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="{{url_for('static',filename='Log1.png')}}" width="200" height="60" class="logo">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/overview">PCOS</a></li>
+                    <li><a href="/about">MACHINE LEARNING</a></li>
+                </ul>
+            </div>
+            <div class="container">
+              <div class="info">
+                <h2>BASIC EXAMINATION FOR PCOS</h2>
+                <h3 style="margin:4rem 4rem 4rem 4rem">THREE CRITERIA FOR BASIC LEVEL SCREENING:</h3>
+
+                <p style="font-size:20px; list-style-type: circle; color: rgb(64, 129, 214); margin:3rem 4rem 0 4rem;" >AGE<br>
+                  BMI(Body Mass Index)<br>
+                  Menstrual Cycle(Regular/Irregular)<br></p>
+
+
+                   <br><br><br>
+                    <p style="margin-top: 10px;">
+                      <p style="font-size:30px; text-align: center; color: #fff; margin-bottom: 30px;">HOW TO CALCULATE BMI?<br></p>
+                      <p style="font-size:30px; text-align: center; color: rgb(70, 107, 7); margin-bottom: 30px; font-weight: bolder;">Weight(Kg)/Height(m<sup>2</sup>)</p>
+                    </p>
+                    <p><h1 style="color: #fff; margin:3rem 4rem 4rem 4rem">Significance of BMI...</h1></p>
+                    <img src="{{url_for('static',filename='bmi.png')}}" width="600" height="300" class="logo1" style="margin-left: 350px;">
+
+                    <p style="font-size: 2rem; margin:4rem 4rem 4rem 4rem;font-family: Comic Sans, Comic Sans MS, cursive; ;font-weight: 100; color:aquamarine">
+                      STEP 1: Check your Menstrual Cycle whether it is regular or irregular.<br>
+                      STEP 2: Check your BMI.<br>
+                      <img src="{{url_for('static',filename='fertile-removebg-preview.png')}}" width="760" height="500" class="logo1" style="margin-left: 200px;">
+                     <br> CASE A: If according to your BMI, you come under over-weight criteria or obese criteria but your cycle is regular then your are less prone of having PCOS.<br><br>
+            CASE B: If according to your BMI, you come under over-weight criteria or obese criteria and also, if your cycle is not regular then you have chances of having PCOS.<br><br> We suggest you go for some basic blood test and go for advance examination or visit a doctor according to your convenience.<br>
+          </p>
+            </div>
+            <div class="text-box">
+            <div class="row">
+              <a href="/search"><b>Advance Examination </b><span>&#x27F6</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </body>
+ </html>

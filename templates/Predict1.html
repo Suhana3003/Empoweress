@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Advance</title>
+         <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+         <link rel="stylesheet" href="{{url_for('static',filename='style4.css')}}"> 
+     </head>
+     <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="{{url_for('static',filename='Log1.png')}}" width="200" height="60" class="logo">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/overview">PCOS</a></li>
+                    <li><a href="/about">MACHINE LEARNING</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="info">
+                  <h2>ADVANCE EXAMINATION FOR PCOS</h2>
+
+                  <br><br>
+                  <form class="input-group" method="POST" action="{{url_for('home')}}">
+                      <table cellspacing="20px" width="100%" >
+                        <TR>
+                            <TD class="fonts">Age(Year):</TD>
+                            <TD><input type="number" class="sizes" name="age" placeholder="Enter your age " required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">Height(cm):</TD>
+                            <TD><input type="number" class="sizes" step="any" name="height" placeholder="Enter your Height(cm) " required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">Weight(Kg):</TD>
+                            <TD><input type="number" class="sizes" name="weight" placeholder="Enter your Weight(Kg) " required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">Cycle (I/R):</TD>
+                            <TD><input type="number" class="sizes" name="cyc" placeholder="Enter your Cycle (I/R) " required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">Cycle Length(Days):</TD>
+                            <TD><input type="number"class="sizes" name="cycle" placeholder="Enter your Cycle Length(Days) "required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">Pregnant(0/1):</TD>
+                            <TD><input type="number" class="sizes" name="preg" placeholder="Enter your Pregnant(0/1) "required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">I beta-HCG(mIU/mL):</TD>
+                            <TD><input type="number" class="sizes" name="ibeta" step="any" placeholder="Enter your I beta-HCG(mIU/mL)" required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">II beta-HCG(mIU/mL):</TD>
+                            <TD><input type="number" class="sizes" name="iibeta" placeholder="Enter your II beta-HCG(mIU/mL)" step="any" required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">FSH/LH:</TD>
+                            <TD><input type="number" step="any" class="sizes" name="fsh" placeholder="Enter your FSH/LH "required></TD>
+                        </TR>
+
+                        <TR>
+                            <TD class="fonts">AMH:</TD>
+                            <TD><input type="number" class="sizes" step="any" name="amh" placeholder="Enter your AMH "required></TD>
+                        </TR>
+                        <TR>
+                            <TD class="fonts">Weight Gain:</TD>
+                            <TD><SELECT ID="opt" class="sizes" name="gain" required>
+                                <OPTION value="0">NO</OPTION>
+                                <OPTION value="1">YES</OPTION>
+                                </SELECT></TD>
+                        </TR>
+                    </table>
+                    <br>
+                    <div class="text-box">
+                    <div class="row">
+                      <a href="/basic"><b>Basic Examination </b><span>&#x27F6</span></a>
+                      <button type="submit" style="color: #fff; text-decoration: none; padding: 10px 20px;margin-right: 20px;border: 5px solid #009688;display: flex;align-items: center; font-size: 30px;line-height: 15px;margin-left: 5px; background: transparent;">Predict!</button>
+                      </div>
+                    </div>
+                </form>
+
+                <br>
+                        <center>
+                            
+                            {%if data%}
+                                <h1>{{data}}</h1>
+                            {%endif%}
+                        </center>            
+              </div>
+          </div>
+        </div>
+     </body>
+ </html>
+
+ 

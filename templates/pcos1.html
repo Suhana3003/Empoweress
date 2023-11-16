@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider | With Manual Buttons and Autoplay Navigation Visibility</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+  </head>
+  <body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="{{url_for('static',filename='Log1.png')}}" width="200" height="60" class="logo">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/overview">PCOS</a></li>
+                <li><a href="/about">MACHINE LEARNING</a></li>
+            </ul>
+        </div>
+        <div class="img-slider">
+            <div class="slide active">
+              <img src="{{url_for('static',filename='pcoshome.jpg')}}" alt="">
+              <div class="info">
+                <h2>Polycystic ovary syndrome</h2>
+                <p>Polycystic ovary syndrome (PCOS) is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may 
+                  develop numerous small collections of fluid (follicles) and fail to regularly release eggs.</p>
+              </div>
+            </div>
+            <div class="slide">
+                <img src="{{url_for('static',filename='pp3.jpg')}}" alt="">
+                <div class="info">
+                  <h2>PCOS Symptoms</h2>
+                  <p>Some females start seeing symptoms around the time of their first period, some women only discover when they have gained a lot of weight or trouble getting pregnant. The most common signs and symptoms of PCOD Problem or PCOS in females are:
+                    
+                      Irregular periods. Infrequent, irregular or prolonged menstrual cycles are the most common sign of PCOS. For example, you might have fewer than nine periods a year, more than 35 days between periods and abnormally heavy periods.
+                      Excess androgen. Elevated levels of male hormones may result in physical signs, such as excess facial and body hair (hirsutism), and occasionally severe acne and male-pattern baldness
+                      Polycystic ovaries. Your ovaries might be enlarged and contain follicles that surround the eggs. As a result, the ovaries might fail to function regularly.
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="{{url_for('static',filename='p4.jpg')}}" alt="">
+                <div class="info">
+                  <h2>CAUSES OF PCOS</h2>
+                  <p>Polycystic ovary syndrome (PCOS) is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may 
+                    develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
+                  </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="{{url_for('static',filename='p5.jpg')}}" alt="">
+                <div class="info">
+                  <h2>COMPLICATIONS OF PCOS</h2>
+                  <p>infertility is one of the main symptoms associated with PCOS. Studies show that PCOD is the most common cause of ovary dysfunctions which increase the rate of infertility. In the large population of women having PCOD, 50 percent reports of having primary infertility while 25 percent reports of having secondary infertility. Many other factors also contribute to infertility such as obesity and insulin resistance, which increases the risk of abortions and 
+                    reduce the rate of pregnancies. Women having PCOD also reports of having endometrial abnormalities which sometimes result in infertility.</p>
+              </div>
+              </div>
+              <div class="slide">
+                <img src="{{url_for('static',filename='p6.jpg')}}" alt="">
+                <div class="info">
+                  <h2>Treatment oF PCOS</h2>
+                  <p>PCOD does not have any cure. Treatment methods could entail changes in lifestyle like loss of weight as well as exercise. Birth control medications can help with enhancing the regularity of menstrual periods, excessive growth of hair, as well as acne. Metformin and also anti-androgens can also help. Additionally, regular acne breakouts treatment plans, as well as hair removal strategies, might be used. Initiatives to enhance fertility consist of weight reduction, clomiphene, or metformin.
+               </p>
+              </div>
+              </div>
+              <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+              </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 10000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+  </body>
+</html>

@@ -31,9 +31,57 @@ def index():
 def index_return():
     return render_template('index.html')
 
-@app.route('/games.html')
-def Game_test():
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
+
+@app.route('/red.html')
+def red():
+    return render_template('red.html')
+
+@app.route('/ovaquest.html')
+def ovaquest():
     return render_template('ovaquest.html')
+
+@app.route('/mood_tracker.html')
+def mood_tracker():
+    return render_template('mood_tracker.html')
+
+@app.route('/cycle_tracker.html')
+def cycle_tracker():
+    return render_template('cycle_tracker.html')
+
+@app.route('/contact_doctor.html')
+def contact_doctor():
+    return render_template('contact_doctor.html')
+
+@app.route('/blogs.html')
+def blogs():
+    return render_template('blogs.html')
+
+@app.route('/blog-post-1.html')
+def blog1():
+    return render_template('blog-post-1.html')
+
+@app.route('/blog-post-2.html')
+def blog2():
+    return render_template('blog-post-2.html')
+
+@app.route('/blog-post-3.html')
+def blog3():
+    return render_template('blog-post-3.html')
+
+@app.route('/blog-post-4.html')
+def blog4():
+    return render_template('blog-post-4.html')
+
+@app.route('/blog-post-5.html')
+def blog5():
+    return render_template('blog-post-5.html')
+
+@app.route('/blog-post-6.html')
+def blog6():
+    return render_template('blog-post-6.html')
 
 from game import CycleQuest
 @app.route('/ovaquest', methods=['GET'])
@@ -112,85 +160,39 @@ def chatbot_response(msg):
 
 app.static_folder = 'static'
 
-
-@app.route('/game.html')
-def game():
-    return render_template('game.html')
-
-@app.route('/about.html')
-def About():
-    return render_template('about.html')
-
-@app.route('/mood_tracker.html')
-def mood():
-    return render_template('mood_tracker.html')
-
-@app.route('/cycle_tracker.html')
-def Game():
-    return render_template('cycle_tracker.html')
-
-@app.route('/blogs.html')
-def blogs():
-    return render_template('blogs.html')
-
-@app.route('/video.html')
-def vid():
-    return render_template('video.html')
-
-@app.route('/blog-post-1.html')
-def blog1():
-    return render_template('blog-post-1.html')
-
-@app.route('/video-post-1.html')
-def vid1():
-    return render_template('video-post-1.html')
-
-@app.route('/blog-post-2.html')
-def blog2():
-    return render_template('blog-post-2.html')
-
-@app.route('/video-post-2.html')
-def vid2():
-    return render_template('video-post-3.html')
-
-@app.route('/blog-post-3.html')
-def blog3():
-    return render_template('blog-post-3.html')
-@app.route('/contact_doctor.html')
-def contact_doctor():
-    return render_template('contact_doctor.html')
-@app.route('/video-post-3.html')
-def vid3():
-    return render_template('video-post-3.html')
-
-@app.route('/blog-post-4.html')
-def blog4():
-    return render_template('blog-post-4.html')
-
-@app.route('/video-post-4.html')
-def vid4():
-    return render_template('video-post-4.html')
-
-@app.route('/blog-post-5.html')
-def blog5():
-    return render_template('blog-post-5.html')
-
-@app.route('/video-post-5.html')
-def vid5():
-    return render_template('video-post-5.html')
-
-@app.route('/blog-post-6.html')
-def blog6():
-    return render_template('blog-post-6.html')
-
-@app.route('/video-post-6.html')
-def vid6():
-    return render_template('video-post-6.html')
-
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
     return chatbot_response(userText)
+
+from flask import Flask, render_template, request
+import pickle
+import numpy as np
+model = pickle.load(open('pcos2.pkl', 'rb'))
+
+@app.route('/result', methods=['POST'])
+def result():
+    data1 = request.form['age']
+    data2 = request.form['height']
+    data3 = request.form['weight']
+    data4 = request.form['cyc']
+    data5 = request.form['cycle']
+    data6 = request.form['preg']
+    data7 = request.form['ibeta']
+    data8 = request.form['iibeta']
+    data9 = request.form['fsh']
+    data10 = request.form['amh']
+    data11 = request.form['gain']
+    arr = np.array([[data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11]])
+    user_input_prediction = arr.astype('float')
+    pred = model.predict(user_input_prediction)
+    pred = str(pred)
+    pred = pred.replace('[','').replace(']','').strip()
+    if pred == '1':
+        data = 'YES'
+    else:
+        data = 'NO'    
+    return render_template('result.html', data=data)
 
 if __name__=='__main__':
     app.run(debug=True)
